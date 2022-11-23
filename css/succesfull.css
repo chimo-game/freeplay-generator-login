@@ -81,11 +81,14 @@ svg {
     transform: translate3d(0, 0, 0);
   }
 }
+
 #Thanks {
   position: absolute;
-  top: 65%;
+  top: 61%;
   left: 0;
+  padding: 1rem;
   right: 0;
+  margin-bottom: 1erm;
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #13414c;
@@ -99,7 +102,7 @@ svg {
 
 #subtitle {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 0;
   right: 0;
   text-align: center;
