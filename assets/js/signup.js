@@ -6,8 +6,8 @@ const form = document.querySelector("form"),
     // cPassField = form.querySelector(".confirm-password"),
     // cPassInput = cPassField.querySelector(".cPassword"),
 
-    claimField = form.querySelector(".claim-field"),
-    claimInput = claimField.querySelector(".claim")
+    claimField = form.querySelector(".cashapp-field"),
+    claimInput = claimField.querySelector(".CashApp")
 
 
 
@@ -30,6 +30,17 @@ function checkEmail() {
         return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
     }
     emailField.classList.remove("invalid"); //removing invalid class if email value matched with emaiPattern
+}
+
+
+function checkCA() {
+
+    if (claimInput.value == '') {
+
+        return claimField.classList.add("invalid");
+    }
+    claimField.classList.remove("invalid");
+
 }
 
 // Hide and show password
@@ -68,13 +79,13 @@ function checkEmail() {
 // Calling Funtion on Form Sumbit
 form.addEventListener("submit", (e) => {
     e.preventDefault(); //preventing form submitting
-    // validateUsername();
+    checkCA();
     checkEmail();
     // createPass();
     // confirmPass();
 
     //calling function on key up
-    emailInput.addEventListener("keyup", validateUsername);
+    emailInput.addEventListener("keyup", checkCA);
     emailInput.addEventListener("keyup", checkEmail);
 
     if (

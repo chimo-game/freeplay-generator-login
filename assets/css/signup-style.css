@@ -4,8 +4,8 @@
 
   --fs-1: 7rem;
 
-  --color-green: #eebd1d;
-  --color-acent: #e1b62a;
+  --color-green: #4c37f1;
+  --color-acent: #4c37f1;
   --color-white: #fff;
   --curve: cubic-bezier(0.42, 0, 0.275, 1.155);
 }
@@ -261,7 +261,7 @@ form .input-field {
 } */
 .button input {
   padding: 0;
-  color: rgb(0, 0, 0);
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   background-color: var(--color-green);
