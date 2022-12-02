@@ -11,17 +11,17 @@ const form = document.querySelector("form"),
 
 
 
-function validateUsername() {
+// function validateUsername() {
 
-    if (claimInput.value == '') {
-        // alert("Please input a Value");
-        // return false;
+//     if (claimInput.value == '') {
+//         // alert("Please input a Value");
+//         // return false;
 
-        return claimField.classList.add("invalid");
-    }
-    claimField.classList.remove("invalid");
+//         return claimField.classList.add("invalid");
+//     }
+//     claimField.classList.remove("invalid");
 
-}
+// }
 
 // Email Validtion
 function checkEmail() {
@@ -33,19 +33,19 @@ function checkEmail() {
 }
 
 // Hide and show password
-const eyeIcons = document.querySelectorAll(".show-hide");
+// const eyeIcons = document.querySelectorAll(".show-hide");
 
-eyeIcons.forEach((eyeIcon) => {
-    eyeIcon.addEventListener("click", () => {
-        const pInput = eyeIcon.parentElement.querySelector("input"); //getting parent element of eye icon and selecting the password input
-        if (pInput.type === "password") {
-            eyeIcon.classList.replace("bx-hide", "bx-show");
-            return (pInput.type = "text");
-        }
-        eyeIcon.classList.replace("bx-show", "bx-hide");
-        pInput.type = "password";
-    });
-});
+// eyeIcons.forEach((eyeIcon) => {
+//     eyeIcon.addEventListener("click", () => {
+//         const pInput = eyeIcon.parentElement.querySelector("input"); 
+//         if (pInput.type === "password") {
+//             eyeIcon.classList.replace("bx-hide", "bx-show");
+//             return (pInput.type = "text");
+//         }
+//         eyeIcon.classList.replace("bx-show", "bx-hide");
+//         pInput.type = "password";
+//     });
+// });
 
 
 // function createPass() {
@@ -68,7 +68,7 @@ eyeIcons.forEach((eyeIcon) => {
 // Calling Funtion on Form Sumbit
 form.addEventListener("submit", (e) => {
     e.preventDefault(); //preventing form submitting
-    validateUsername();
+    // validateUsername();
     checkEmail();
     // createPass();
     // confirmPass();
